@@ -4,6 +4,12 @@
 
 ### Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps
 
+**Shuning Zhang**<sup>1,\*</sup>, **Liang Li**<sup>2,\*</sup>, **Yunheng Wang**<sup>1</sup>, **Tao Wang**<sup>1</sup>, **Yihang Kang**<sup>1</sup>, **Renjing Xu**<sup>1</sup>
+
+<sup>1</sup> Robotics and Autonomous Systems Thrust, Systems Hub, The Hong Kong University of Science and Technology (Guangzhou), China<br>
+<sup>2</sup> School of Communications and Information Engineering, Nanjing University of Posts and Telecommunications, China<br>
+<sup>\*</sup> Equal contribution
+
 **Training-free air-ground collaboration — the UAV turns its "can see" into the UGV's "can drive".**
 
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
@@ -196,12 +202,6 @@ memory. Each decision step (≈3 s) the UAV annotates the bird's-eye map and run
 3D-SPF, while the UGV plans a 10-waypoint road path and follows it with a
 closed-loop controller. Success means either agent reaches the target within
 10 m inside the time budget.
-
-## Authors
-
-**Shuning Zhang**, **Liang Li**, **Yunheng Wang**, **Tao Wang**, **Yihang Kang**, **Renjing Xu**
-
-*Shuning Zhang and Liang Li contributed equally.*
 
 ## Citation
 
