@@ -197,6 +197,12 @@ memory. Each decision step (≈3 s) the UAV annotates the bird's-eye map and run
 closed-loop controller. Success means either agent reaches the target within
 10 m inside the time budget.
 
+## Authors
+
+**Shuning Zhang**, **Liang Li**, **Yunheng Wang**, **Tao Wang**, **Yihang Kang**, **Renjing Xu**
+
+*Shuning Zhang and Liang Li contributed equally.*
+
 ## Citation
 
 If you use this code, please cite:
