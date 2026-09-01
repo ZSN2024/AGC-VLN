@@ -65,7 +65,7 @@ If you use this code, please cite:
 ```bibtex
 @article{zhang2026agcvln,
   title   = {Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird's-Eye Maps},
-  author  = {Shuning Zhang},
+  author  = {Shuning Zhang and Liang Li and Yunheng Wang and Tao Wang and Yihang Kang and Renjing Xu},
   year    = {2026},
 }
 ```
