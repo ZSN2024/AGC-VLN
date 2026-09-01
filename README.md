@@ -102,6 +102,25 @@ On 100 closed-loop episodes in CARLA-Air's Town10HD scene, AGC-VLN reaches a
 individual agent — and exceeds the strongest published single-agent baseline
 (Travel UAV, 53.3%) by **23.7 points**.
 
+### Main results
+
+| Method | SR_UGV ↑ | SR_UAV ↑ | SR_joint ↑ | SPL ↑ | NE (m) ↓ | CG ↑ | Time (s) ↓ | VLM calls ↓ | Path_UAV (m) ↓ | Path_UGV (m) ↓ |
+|---|---|---|---|---|---|---|---|---|---|---|
+| OpenFly | — | 0.0% | 0.0% | 0.0% | 78.4±18.7 | 0.0% | 181.8±1.5 | 34.1±7.3 | 56.4±16.0 | — |
+| FineCog-Nav | — | 13.3% | 13.3% | 13.3% | 28.4±12.9 | 0.0% | 177.2±35.4 | 58.0±12.4 | 19.9±10.4 | — |
+| 3DG-VLN | — | 33.3% | 33.3% | 33.3% | 49.6±32.1 | 0.0% | 142.1±60.4 | 11.7±5.2 | 49.2±21.7 | — |
+| Travel UAV | — | 53.3% | 53.3% | 53.3% | 30.3±24.3 | 0.0% | 115.8±63.4 | 21.0±11.5 | 42.24±27.70 | — |
+| UGV-only VLM | 13.3% | — | 13.3% | 13.3% | 113.4±63.4 | 0.0% | 157.9±58.2 | 9.5±3.5 | — | 106.4±60.3 |
+| UAV-only SPF | — | 20.0% | 20.0% | 18.3% | 155.5±94.9 | 0.0% | 161.6±51.8 | 12.9±6.5 | 119.1±74.1 | — |
+| UAV-only 3D-SPF | — | 60.0% | 60.0% | 46.4% | 30.0±40.9 | 0.0% | 134.4±39.0 | 13.0±7.1 | 84.3±36.7 | — |
+| **AGC-VLN (ours)** | **75.0%** | **50.0%** | **77.0%** | **61.9%** | **10.9±16.2** | **+27.0%** | **162.0±21.4** | **12.1±2.9** | **65.1±22.2** | **43.5±14.0** |
+
+SR_UGV / SR_UAV / SR_joint = UGV / UAV / joint success rate (goal within 5 m).
+SPL = success weighted by path length; NE = navigation error; CG = collaboration
+gain = SR_joint − min(SR_UAV, SR_UGV); "—" = not applicable. The first block is
+published single-agent baselines, the second our single-agent ablations, and the
+last our full AGC-VLN system.
+
 <p align="center">
   <img src="assets/ablation.png" alt="Ablation results" width="100%">
 </p>
@@ -142,6 +161,12 @@ AGC-VLN/
 ```
 
 ## Installation
+
+> **Prerequisite — CARLA-Air.** This code runs on top of
+> [CARLA-Air](https://github.com/louiszengCN/CarlaAir)
+> ([arXiv:2603.28032](https://arxiv.org/abs/2603.28032)), which merges CARLA and
+> AirSim into a single Unreal Engine process. Set it up first following its own
+> instructions, then continue with the steps below.
 
 ```bash
 # 1. Python dependencies
