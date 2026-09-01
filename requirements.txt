@@ -1,0 +1,37 @@
+# ── CarlaAir 实验环境依赖(与 .venv 实际安装版本一致)──────────────
+# 非 pip 依赖:
+#   carla  : bash env_setup/setup_env.sh 从 env_setup/carla_python_module.tar.gz 安装
+#   airsim : 源码位于 third_party/airsim-python(AirSim 官方 PyPI 包已停更),需加入 sys.path
+#   openfly-agent-7b 模型权重:挂载在 /mnt/hdd/openfly-agent-7b,不入库
+#   安装方式:source ../.venv/bin/activate && pip install -r requirements.txt
+
+# ── 基础 ────────────────────────────────────────────────────
+numpy==2.2.6
+opencv-python==5.0.0
+Pillow==12.3.0
+pygame==2.6.1
+matplotlib==3.10.9
+requests==2.34.2
+httpx==0.28.1
+packaging==26.3
+pyyaml==6.0.3
+
+# ── SPF(VLM 视觉定位;openai SDK 直连 DashScope compatible-mode)──
+openai==2.53.0
+
+# ── OpenFly(OpenVLA 7B)──────────────────────────────────────
+torch==2.13.0
+torchvision==0.28.0
+transformers==4.53.0
+accelerate==1.14.0
+timm==0.9.16
+tokenizers==0.21.4
+peft==0.20.0
+
+# ── FineCog-Nav ─────────────────────────────────────────────
+json-repair==0.63.2
+yacs==0.1.8
+scipy==1.15.3
+
+# ── AirSim 客户端依赖 ───────────────────────────────────────
+msgpack-rpc-python==0.4.1

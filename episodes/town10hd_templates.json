@@ -1,0 +1,1315 @@
+{
+  "meta": {
+    "map": "Town10HD",
+    "generated_by": "episodes/generate.py",
+    "settings": {
+      "min_dist_m": 40.0,
+      "max_dist_m": 60.0,
+      "uav_altitude_m": 50.0,
+      "seed": 42
+    }
+  },
+  "episodes": [
+    {
+      "id": "town10hd_001",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #28 到 #22 (距离 48m)",
+      "goal": {
+        "x": -52.1,
+        "y": 100.2,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 28,
+        "x": -15.1,
+        "y": 69.7,
+        "z": 0.6,
+        "yaw": 0.1
+      },
+      "uav_spawn": {
+        "x": -33.6,
+        "y": 85.0,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_002",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #70 到 #42 (距离 59m)",
+      "goal": {
+        "x": 62.0,
+        "y": 16.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 70,
+        "x": 109.9,
+        "y": -17.2,
+        "z": 0.6,
+        "yaw": -89.6
+      },
+      "uav_spawn": {
+        "x": 86.0,
+        "y": -0.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 58.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_003",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #57 到 #77 (距离 53m)",
+      "goal": {
+        "x": 7.4,
+        "y": -60.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 57,
+        "x": -41.7,
+        "y": -41.4,
+        "z": 0.6,
+        "yaw": -89.6
+      },
+      "uav_spawn": {
+        "x": -17.2,
+        "y": -51.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 52.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_004",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #26 到 #29 (距离 45m)",
+      "goal": {
+        "x": -1.0,
+        "y": 69.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 26,
+        "x": -41.7,
+        "y": 89.7,
+        "z": 0.6,
+        "yaw": -90.2
+      },
+      "uav_spawn": {
+        "x": -21.4,
+        "y": 79.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 45.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_005",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #151 到 #119 (距离 42m)",
+      "goal": {
+        "x": -45.3,
+        "y": -1.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 151,
+        "x": -48.6,
+        "y": -43.4,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": -47.0,
+        "y": -22.6,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 41.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_006",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #8 到 #24 (距离 60m)",
+      "goal": {
+        "x": -52.1,
+        "y": 63.5,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 8,
+        "x": -111.1,
+        "y": 72.9,
+        "z": 0.6,
+        "yaw": 90.6
+      },
+      "uav_spawn": {
+        "x": -81.6,
+        "y": 68.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_007",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #23 到 #29 (距离 58m)",
+      "goal": {
+        "x": -1.0,
+        "y": 69.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 23,
+        "x": -48.6,
+        "y": 102.5,
+        "z": 0.6,
+        "yaw": 89.8
+      },
+      "uav_spawn": {
+        "x": -24.8,
+        "y": 86.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 57.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_008",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #59 到 #61 (距离 43m)",
+      "goal": {
+        "x": -15.4,
+        "y": -68.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 59,
+        "x": 26.4,
+        "y": -57.4,
+        "z": 0.6,
+        "yaw": -0.0
+      },
+      "uav_spawn": {
+        "x": 5.5,
+        "y": -62.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 43.1,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_009",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #143 到 #42 (距离 57m)",
+      "goal": {
+        "x": 62.0,
+        "y": 16.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 143,
+        "x": 103.0,
+        "y": -22.7,
+        "z": 0.6,
+        "yaw": 90.8
+      },
+      "uav_spawn": {
+        "x": 82.5,
+        "y": -2.9,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 57.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_010",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #139 到 #83 (距离 42m)",
+      "goal": {
+        "x": -41.9,
+        "y": -30.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 139,
+        "x": -13.3,
+        "y": -61.1,
+        "z": 0.6,
+        "yaw": 0.6
+      },
+      "uav_spawn": {
+        "x": -27.6,
+        "y": -45.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 42.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_011",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #56 到 #114 (距离 41m)",
+      "goal": {
+        "x": -67.0,
+        "y": -68.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 56,
+        "x": -48.8,
+        "y": -32.0,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": -57.9,
+        "y": -50.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 41.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_012",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #150 到 #53 (距离 46m)",
+      "goal": {
+        "x": 77.0,
+        "y": 24.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 150,
+        "x": 32.0,
+        "y": 13.3,
+        "z": 0.6,
+        "yaw": -179.8
+      },
+      "uav_spawn": {
+        "x": 54.5,
+        "y": 19.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 46.4,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_013",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #1 到 #47 (距离 49m)",
+      "goal": {
+        "x": -20.1,
+        "y": 16.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 1,
+        "x": -67.3,
+        "y": 28.0,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -43.7,
+        "y": 22.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_014",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #108 到 #53 (距离 50m)",
+      "goal": {
+        "x": 77.0,
+        "y": 24.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 108,
+        "x": 99.4,
+        "y": -19.7,
+        "z": 0.6,
+        "yaw": 90.8
+      },
+      "uav_spawn": {
+        "x": 88.2,
+        "y": 2.6,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 49.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_015",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #71 到 #60 (距离 47m)",
+      "goal": {
+        "x": 22.9,
+        "y": -60.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 71,
+        "x": -24.3,
+        "y": -57.8,
+        "z": 0.6,
+        "yaw": 0.6
+      },
+      "uav_spawn": {
+        "x": -0.7,
+        "y": -59.3,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 47.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_016",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #30 到 #95 (距离 60m)",
+      "goal": {
+        "x": -41.7,
+        "y": 48.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 30,
+        "x": 14.1,
+        "y": 69.7,
+        "z": 0.6,
+        "yaw": 0.1
+      },
+      "uav_spawn": {
+        "x": -13.8,
+        "y": 59.3,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.6,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_017",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #128 到 #113 (距离 59m)",
+      "goal": {
+        "x": 44.0,
+        "y": 52.5,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 128,
+        "x": 102.6,
+        "y": 44.0,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": 73.3,
+        "y": 48.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.2,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_018",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #153 到 #112 (距离 49m)",
+      "goal": {
+        "x": -75.3,
+        "y": 16.5,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 153,
+        "x": -45.1,
+        "y": 55.7,
+        "z": 0.6,
+        "yaw": -90.2
+      },
+      "uav_spawn": {
+        "x": -60.2,
+        "y": 36.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 49.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_019",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #146 到 #153 (距离 59m)",
+      "goal": {
+        "x": -45.1,
+        "y": 55.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 146,
+        "x": -45.0,
+        "y": 115.0,
+        "z": 0.6,
+        "yaw": -90.2
+      },
+      "uav_spawn": {
+        "x": -45.0,
+        "y": 85.3,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_020",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #112 到 #13 (距离 57m)",
+      "goal": {
+        "x": -113.4,
+        "y": -25.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 112,
+        "x": -75.3,
+        "y": 16.5,
+        "z": 0.6,
+        "yaw": -179.8
+      },
+      "uav_spawn": {
+        "x": -94.3,
+        "y": -4.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 56.9,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_021",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #0 到 #6 (距离 58m)",
+      "goal": {
+        "x": -111.0,
+        "y": 59.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 0,
+        "x": -64.6,
+        "y": 24.5,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -87.8,
+        "y": 42.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 58.2,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_022",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #73 到 #36 (距离 41m)",
+      "goal": {
+        "x": 61.6,
+        "y": 66.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 73,
+        "x": 98.8,
+        "y": 82.9,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": 80.2,
+        "y": 74.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 40.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_023",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #115 到 #4 (距离 52m)",
+      "goal": {
+        "x": -103.2,
+        "y": -14.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 115,
+        "x": -52.3,
+        "y": -1.6,
+        "z": 0.6,
+        "yaw": 89.8
+      },
+      "uav_spawn": {
+        "x": -77.8,
+        "y": -8.0,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 52.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_024",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #125 到 #141 (距离 47m)",
+      "goal": {
+        "x": -114.2,
+        "y": 43.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 125,
+        "x": -103.2,
+        "y": -2.2,
+        "z": 0.6,
+        "yaw": -89.4
+      },
+      "uav_spawn": {
+        "x": -108.7,
+        "y": 20.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 47.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_025",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #80 到 #86 (距离 49m)",
+      "goal": {
+        "x": -18.4,
+        "y": 130.2,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 80,
+        "x": 30.0,
+        "y": 133.9,
+        "z": 0.6,
+        "yaw": -179.7
+      },
+      "uav_spawn": {
+        "x": 5.8,
+        "y": 132.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_026",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #101 到 #11 (距离 48m)",
+      "goal": {
+        "x": -113.6,
+        "y": -14.3,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 101,
+        "x": -89.9,
+        "y": 27.9,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -101.8,
+        "y": 6.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.4,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_027",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #89 到 #94 (距离 56m)",
+      "goal": {
+        "x": -71.3,
+        "y": 132.3,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 89,
+        "x": -15.4,
+        "y": 133.7,
+        "z": 0.6,
+        "yaw": -179.6
+      },
+      "uav_spawn": {
+        "x": -43.4,
+        "y": 133.0,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 55.9,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_028",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #96 到 #120 (距离 55m)",
+      "goal": {
+        "x": -41.8,
+        "y": -6.6,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 96,
+        "x": -87.3,
+        "y": 24.4,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -64.5,
+        "y": 8.9,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 55.1,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_029",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #131 到 #2 (距离 55m)",
+      "goal": {
+        "x": -87.6,
+        "y": 13.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 131,
+        "x": -41.8,
+        "y": -16.6,
+        "z": 0.6,
+        "yaw": -90.2
+      },
+      "uav_spawn": {
+        "x": -64.7,
+        "y": -1.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 54.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_030",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #87 到 #56 (距离 47m)",
+      "goal": {
+        "x": -48.8,
+        "y": -32.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 87,
+        "x": -9.9,
+        "y": -57.6,
+        "z": 0.6,
+        "yaw": 0.6
+      },
+      "uav_spawn": {
+        "x": -29.3,
+        "y": -44.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 46.6,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_031",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #142 到 #154 (距离 57m)",
+      "goal": {
+        "x": -2.6,
+        "y": -68.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 142,
+        "x": -52.1,
+        "y": -40.2,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": -27.4,
+        "y": -54.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 56.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_032",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #74 到 #49 (距离 45m)",
+      "goal": {
+        "x": -0.8,
+        "y": 24.6,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 74,
+        "x": 40.4,
+        "y": 41.9,
+        "z": 0.6,
+        "yaw": 89.2
+      },
+      "uav_spawn": {
+        "x": 19.8,
+        "y": 33.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 44.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_033",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #117 到 #32 (距离 43m)",
+      "goal": {
+        "x": -8.0,
+        "y": 66.3,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 117,
+        "x": -28.7,
+        "y": 28.1,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -18.4,
+        "y": 47.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 43.4,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_034",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #147 到 #81 (距离 52m)",
+      "goal": {
+        "x": 99.1,
+        "y": 42.1,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 147,
+        "x": 102.9,
+        "y": -9.4,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": 101.0,
+        "y": 16.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 51.6,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_035",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #6 到 #110 (距离 45m)",
+      "goal": {
+        "x": -79.3,
+        "y": 28.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 6,
+        "x": -111.0,
+        "y": 59.7,
+        "z": 0.6,
+        "yaw": 90.6
+      },
+      "uav_spawn": {
+        "x": -95.2,
+        "y": 43.9,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 44.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_036",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #94 到 #84 (距离 53m)",
+      "goal": {
+        "x": -52.1,
+        "y": 82.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 94,
+        "x": -71.3,
+        "y": 132.3,
+        "z": 0.6,
+        "yaw": -167.1
+      },
+      "uav_spawn": {
+        "x": -61.7,
+        "y": 107.5,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 53.2,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_037",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #118 到 #107 (距离 40m)",
+      "goal": {
+        "x": -76.7,
+        "y": 24.5,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 118,
+        "x": -48.8,
+        "y": -4.8,
+        "z": 0.6,
+        "yaw": 89.8
+      },
+      "uav_spawn": {
+        "x": -62.8,
+        "y": 9.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 40.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_038",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #102 到 #151 (距离 59m)",
+      "goal": {
+        "x": -48.6,
+        "y": -43.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 102,
+        "x": -66.8,
+        "y": 13.0,
+        "z": 0.6,
+        "yaw": -179.8
+      },
+      "uav_spawn": {
+        "x": -57.7,
+        "y": -15.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_039",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #149 到 #100 (距离 51m)",
+      "goal": {
+        "x": 52.8,
+        "y": 69.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 149,
+        "x": 102.3,
+        "y": 80.4,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": 77.5,
+        "y": 75.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 50.6,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_040",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #29 到 #132 (距离 53m)",
+      "goal": {
+        "x": -48.7,
+        "y": 47.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 29,
+        "x": -1.0,
+        "y": 69.7,
+        "z": 0.6,
+        "yaw": 0.1
+      },
+      "uav_spawn": {
+        "x": -24.9,
+        "y": 58.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 52.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_041",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #129 到 #146 (距离 44m)",
+      "goal": {
+        "x": -45.0,
+        "y": 115.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 129,
+        "x": -9.2,
+        "y": 140.7,
+        "z": 0.6,
+        "yaw": 0.4
+      },
+      "uav_spawn": {
+        "x": -27.1,
+        "y": 127.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 44.1,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_042",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #134 到 #50 (距离 49m)",
+      "goal": {
+        "x": -4.0,
+        "y": 28.1,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 134,
+        "x": 27.1,
+        "y": 66.3,
+        "z": 0.6,
+        "yaw": -179.9
+      },
+      "uav_spawn": {
+        "x": 11.6,
+        "y": 47.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 49.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_043",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #107 到 #126 (距离 50m)",
+      "goal": {
+        "x": -48.8,
+        "y": -17.2,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 107,
+        "x": -76.7,
+        "y": 24.5,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -62.8,
+        "y": 3.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 50.2,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_044",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #132 到 #127 (距离 59m)",
+      "goal": {
+        "x": -45.3,
+        "y": -11.6,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 132,
+        "x": -48.7,
+        "y": 47.0,
+        "z": 0.6,
+        "yaw": 89.8
+      },
+      "uav_spawn": {
+        "x": -47.0,
+        "y": 17.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 58.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_045",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #33 到 #134 (距离 41m)",
+      "goal": {
+        "x": 27.1,
+        "y": 66.3,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 33,
+        "x": 67.7,
+        "y": 69.8,
+        "z": 0.6,
+        "yaw": 0.1
+      },
+      "uav_spawn": {
+        "x": 47.4,
+        "y": 68.0,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 40.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_046",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #12 到 #102 (距离 56m)",
+      "goal": {
+        "x": -66.8,
+        "y": 13.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 12,
+        "x": -109.9,
+        "y": -23.4,
+        "z": 0.6,
+        "yaw": 90.6
+      },
+      "uav_spawn": {
+        "x": -88.3,
+        "y": -5.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 56.4,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_047",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #133 到 #37 (距离 57m)",
+      "goal": {
+        "x": 106.0,
+        "y": 67.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 133,
+        "x": 80.3,
+        "y": 16.9,
+        "z": 0.6,
+        "yaw": -179.8
+      },
+      "uav_spawn": {
+        "x": 93.2,
+        "y": 42.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 56.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_048",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #109 到 #140 (距离 45m)",
+      "goal": {
+        "x": -27.0,
+        "y": 69.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 109,
+        "x": -25.5,
+        "y": 24.6,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -26.2,
+        "y": 47.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 45.1,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_049",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #36 到 #123 (距离 42m)",
+      "goal": {
+        "x": 59.8,
+        "y": 24.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 36,
+        "x": 61.6,
+        "y": 66.4,
+        "z": 0.6,
+        "yaw": -179.9
+      },
+      "uav_spawn": {
+        "x": 60.7,
+        "y": 45.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 41.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_050",
+      "map": "Town10HD",
+      "instruction": "[TODO: 写指令] 从 #58 到 #139 (距离 40m)",
+      "goal": {
+        "x": -13.3,
+        "y": -61.1,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 58,
+        "x": -45.2,
+        "y": -36.5,
+        "z": 0.6,
+        "yaw": -89.6
+      },
+      "uav_spawn": {
+        "x": -29.2,
+        "y": -48.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 40.3,
+      "time_budget_s": 180,
+      "tags": []
+    }
+  ],
+  "spawn_points": []
+}

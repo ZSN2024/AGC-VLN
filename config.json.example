@@ -1,0 +1,41 @@
+{
+  "models": {
+    "spf": {
+      "model": "gemini-3.7-flash-c",
+      "base_url": "https://api.ccode.vip/v1",
+      "api_key": "",
+      "base_urls": {
+        "dashscope": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "ccode": "https://api.ccode.vip/v1"
+      },
+      "api_keys": {
+        "dashscope": "",
+        "ccode": ""
+      },
+      "temperature": 0.2,
+      "max_tokens": 4096,
+      "horizontal_fov_deg": 108.0,
+      "projection_distance_max_m": 28.0
+    },
+    "openfly": {
+      "model_path": "IPEC-COMMUNITY/openfly-agent-7b",
+      "device": "cuda:0",
+      "unnorm_key": "vlnv1",
+      "max_forward_m": 3.0,
+      "use_discrete": false,
+      "compile_vision": false
+    }
+  },
+  "scenario": {
+    "truck_speed": 1.0,
+    "horizontal_gain": 5.0,
+    "vertical_gain": 0.8
+  },
+  "prompts": {
+    "landing_c0": "Follow the moving truck, keep it in view, align above its rear cargo bed, and land safely on the cargo bed.",
+    "landing_c1": "Follow the moving truck, keep it in view, align above its rear cargo bed, and land safely on the cargo bed.\n\nAssistant hint: the cargo bed is {direction}. The truck is {motion}. Current phase: {phase}. Use the hint only to choose your next UAV action.",
+    "landing_c2": "Follow the moving truck, keep it in view, align above its rear cargo bed, and land safely on the cargo bed.\n\nAssistant hint: the cargo bed is {direction}. The truck is {motion}. Current phase: {phase}. Use the hint only to choose your next UAV action.",
+    "escort_c0": "Follow the moving truck and keep it in view.",
+    "escort_c1": "Follow the moving truck and keep it in view.\n\nAssistant hint: the truck is {state}. Current phase: {phase}. Use the hint only to recover visual contact."
+  }
+}

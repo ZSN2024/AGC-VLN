@@ -1,0 +1,19 @@
+# Secrets / local config
+config.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+
+# Experiment results (never committed)
+runs/
+output/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "map": "Town10HD",
+    "generated_by": "episodes/generate.py",
+    "settings": {
+      "min_dist_m": 40.0,
+      "max_dist_m": 60.0,
+      "uav_altitude_m": 50.0,
+      "seed": 42
+    }
+  },
+  "episodes": [
+    {
+      "id": "town10hd_001",
+      "map": "Town10HD",
+      "instruction": "A blue truck is parked at a crosswalk on a wide urban street, positioned near the center of the intersection. Directly behind the truck is a small rectangular park with a central fountain and surrounding benches, bordered by a low wall and flanked by two large trees with dense foliage. To the right of the park, an elevated pedestrian walkway connects two buildings across the street. The surrounding area includes multi-story buildings with varied architectural styles, including one with a distinctive green roof and another with a flat rooftop and visible ventilation units. On the left side of the street, a row of tall evergreen trees lines the sidewalk, creating a natural barrier between the road and adjacent structures. A yellow construction vehicle is partially visible in the lower-left corner, near a building with a light blue roof. The pavement features clear white lane markings and pedestrian crossings, with a traffic signal pole visible near the curb. The overall scene is illuminated by daylight, casting soft shadows from the buildings and trees.",
+      "goal": {
+        "x": -52.1,
+        "y": 100.2,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 28,
+        "x": -15.1,
+        "y": 69.7,
+        "z": 0.6,
+        "yaw": 0.1
+      },
+      "uav_spawn": {
+        "x": -33.6,
+        "y": 85.0,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_002",
+      "map": "Town10HD",
+      "instruction": "A large, ornate classical-style building with columns and a central entrance, located across the street from the truck. A prominent billboard featuring a woman's face on the side of a nearby high-rise building. A tall, dense tree directly behind the truck, partially obscuring its rear. A blue delivery truck parked in the center of a narrow road, surrounded by urban infrastructure. A crosswalk with white stripes at the intersection ahead. A smaller tree near the sidewalk on the opposite side of the street. A multi-story rectangular building with a grid of windows to the right of the truck. A paved plaza with geometric patterns and scattered benches to the left. A few pedestrians visible near the crosswalk and along the sidewalks.",
+      "goal": {
+        "x": 62.0,
+        "y": 16.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 70,
+        "x": 109.9,
+        "y": -17.2,
+        "z": 0.6,
+        "yaw": -89.6
+      },
+      "uav_spawn": {
+        "x": 86.0,
+        "y": -0.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 58.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_003",
+      "map": "Town10HD",
+      "instruction": "A large blue truck is centered on a multi-lane road with white dashed lane markings. The road curves gently to the right and is bordered by tall palm trees with green fronds, spaced regularly along both sides. On the left side of the road, there is a circular landscaped area with a small fountain or statue at its center. Adjacent to this are modern high-rise buildings with dark glass facades and vertical lines. On the right side, a lower building with a light-colored facade and horizontal windows stands next to a sidewalk featuring checkered pavement patterns. A few scattered pedestrians and vehicles are visible near the sidewalks. The sky is clear, casting distinct shadows from the palm trees onto the road and surrounding areas.",
+      "goal": {
+        "x": 7.4,
+        "y": -60.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 57,
+        "x": -41.7,
+        "y": -41.4,
+        "z": 0.6,
+        "yaw": -89.6
+      },
+      "uav_spawn": {
+        "x": -17.2,
+        "y": -51.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 52.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_004",
+      "map": "Town10HD",
+      "instruction": "A purple truck is centered on a narrow road flanked by tall, snow-covered evergreen trees. The road has visible lane markings and a central divider. On the left side, a multi-story building with blue-gray walls features numerous windows and external fire escapes with orange awnings. On the right, a row of smaller buildings with sloped brown roofs and teal-colored walls lines the street. Snow covers rooftops, tree branches, and parts of the sidewalk. A distant white building with columns stands at the end of the street, partially obscured by trees.",
+      "goal": {
+        "x": -1.0,
+        "y": 69.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 26,
+        "x": -41.7,
+        "y": 89.7,
+        "z": 0.6,
+        "yaw": -90.2
+      },
+      "uav_spawn": {
+        "x": -21.4,
+        "y": 79.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 45.3,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_005",
+      "map": "Town10HD",
+      "instruction": "A large blue truck is positioned at a crosswalk on a city street, with a distinctive grid-like pattern of teal lines projected onto the road surface nearby. The intersection features white pedestrian crosswalk markings and directional arrows painted on the asphalt. Surrounding the truck are tall multi-story buildings with uniform windows and classical architectural details, including columns and decorative cornices. A row of evenly spaced trees lines the sidewalk along one side of the street. The pavement includes checkered patterns near building entrances, and there are visible shadows cast by the structures, indicating bright overhead lighting. Traffic signs and poles are present at the corners, and the overall scene has a clean, orderly urban layout with minimal pedestrian or vehicle activity.",
+      "goal": {
+        "x": -45.3,
+        "y": -1.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 151,
+        "x": -48.6,
+        "y": -43.4,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": -47.0,
+        "y": -22.6,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 41.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_006",
+      "map": "Town10HD",
+      "instruction": "A blue truck is positioned on a multi-lane road at an intersection, with a distinctive purple cab and a white trailer. The road features a crosswalk directly ahead of the truck and a green grid pattern on the sidewalk to the left. A row of evenly spaced trees lines both sides of the street, forming a continuous green corridor. On the left side, a tall, light-blue building with multiple stories and rectangular windows stands prominently. To the right, a cluster of smaller, sloped-roof buildings with varied roof colors (green, brown, and gray) creates a contrasting architectural style. A small black vehicle is parked near the corner of the intersection. The surrounding area includes paved sidewalks, streetlights, and a mix of modern and traditional building designs. The sky is clear, casting sharp shadows from the structures and trees.",
+      "goal": {
+        "x": -52.1,
+        "y": 63.5,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 8,
+        "x": -111.1,
+        "y": 72.9,
+        "z": 0.6,
+        "yaw": 90.6
+      },
+      "uav_spawn": {
+        "x": -81.6,
+        "y": 68.2,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 59.7,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_007",
+      "map": "Town10HD",
+      "instruction": "A purple truck is centered on a narrow, snow-dusted road flanked by tall, densely packed buildings with distinctive architectural features. On the left side, a light blue building has multiple orange awnings and black fire escapes extending from its facade. The right side features a teal-colored building with irregular rooflines and dark brown gabled sections. Snow-covered evergreen trees line both sides of the street, forming a symmetrical canopy over the road. The road itself has visible lane markings and a central divider, with faint tire tracks in the snow. A small white arrow painted on the pavement points forward near the truck. The surrounding area is urban, with no visible pedestrians or vehicles other than the truck, and the sky appears overcast.",
+      "goal": {
+        "x": -1.0,
+        "y": 69.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 23,
+        "x": -48.6,
+        "y": 102.5,
+        "z": 0.6,
+        "yaw": 89.8
+      },
+      "uav_spawn": {
+        "x": -24.8,
+        "y": 86.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 57.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_008",
+      "map": "Town10HD",
+      "instruction": "A large circular fountain with a central statue is located on the left sidewalk, surrounded by a patterned pavement and benches. Tall palm trees line both sides of the street, casting long shadows across the road. The truck is positioned on the right side of a wide, multi-lane road marked with dashed white lines and a central green dividing strip. On either side of the road are modern high-rise buildings with glass and concrete facades. The sidewalk features a checkered tile pattern, and scattered trash bins and small objects are visible near the curb. A few pedestrians and vehicles are present in the distance, but the area around the truck is relatively clear.",
+      "goal": {
+        "x": -15.4,
+        "y": -68.0,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 59,
+        "x": 26.4,
+        "y": -57.4,
+        "z": 0.6,
+        "yaw": -0.0
+      },
+      "uav_spawn": {
+        "x": 5.5,
+        "y": -62.7,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 43.1,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_009",
+      "map": "Town10HD",
+      "instruction": "A large, ornate neoclassical building with columns and a central entrance dominates the background, featuring blue banners and a symmetrical facade. A prominent billboard with a purple advertisement is mounted on the side of a nearby modern multi-story building. The street is lined with tall, evenly spaced evergreen trees with dense foliage. A distinctive blue truck is parked near the center of the road, partially obscured by one of the trees. The road surface has visible lane markings and crosswalks. Sidewalks are paved with light-colored tiles, and there are small benches and lampposts along the edges. A few pedestrians and vehicles are present, but they are sparse. The surrounding buildings include a mix of architectural styles, with one having a greenish exterior and another with a grid-like window pattern.",
+      "goal": {
+        "x": 62.0,
+        "y": 16.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 143,
+        "x": 103.0,
+        "y": -22.7,
+        "z": 0.6,
+        "yaw": 90.8
+      },
+      "uav_spawn": {
+        "x": 82.5,
+        "y": -2.9,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 57.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_010",
+      "map": "Town10HD",
+      "instruction": "A large, light-blue multi-story building with a classical facade featuring columns and symmetrical windows dominates the background. The building has a distinctive white checkered pattern on its ground-level entrance area. A tall palm tree stands prominently near the corner of the intersection, adding a tropical element to the urban setting. The truck is positioned at a crosswalk in the center of a four-way intersection marked with clear pedestrian crossings and directional road markings. The road surface shows visible wear and dark patches, likely from asphalt repairs or oil stains. A small blue flag is mounted on a pole near the building's entrance. Adjacent buildings include a modern high-rise with a grid-like window pattern and another structure with a darker facade. The sidewalk features a circular planter with a fountain. The overall scene is brightly lit, suggesting daytime with clear weather.",
+      "goal": {
+        "x": -41.9,
+        "y": -30.4,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 139,
+        "x": -13.3,
+        "y": -61.1,
+        "z": 0.6,
+        "yaw": 0.6
+      },
+      "uav_spawn": {
+        "x": -27.6,
+        "y": -45.8,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 42.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_011",
+      "map": "Town10HD",
+      "instruction": "A large, circular fountain with a central sculpture is located on the right sidewalk near the intersection. A tall palm tree stands directly beside the fountain, casting a distinct shadow. The street features a prominent pedestrian crosswalk with white stripes at the intersection. On the left side of the road, a blue truck is parked near a sidewalk lined with several palm trees, each spaced evenly along the curb. The buildings flanking the street are modern high-rises with grid-like windows and light-colored facades. The pavement has a checkered pattern in the sidewalks and crosswalk areas. A small bench and trash can are visible near the base of one palm tree on the left. The road surface shows wet patches, indicating recent rain or cleaning.",
+      "goal": {
+        "x": -67.0,
+        "y": -68.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 56,
+        "x": -48.8,
+        "y": -32.0,
+        "z": 0.6,
+        "yaw": 90.4
+      },
+      "uav_spawn": {
+        "x": -57.9,
+        "y": -50.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 41.0,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_012",
+      "map": "Town10HD",
+      "instruction": "A large, ornate classical-style building with columns and a central staircase dominates the background. A prominent billboard featuring a woman's face is mounted on the side of a modern multi-story building to the right. The truck is parked in a narrow alleyway between two buildings, flanked by two distinct blue-green trees with dense foliage. A crosswalk with white stripes crosses the street near the alley entrance. Several small, uniquely shaped street signs are visible along the sidewalk. The pavement shows wet patches, indicating recent rain. The surrounding area includes a mix of paved roads, sidewalks, and a few scattered pedestrians.",
+      "goal": {
+        "x": 77.0,
+        "y": 24.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 150,
+        "x": 32.0,
+        "y": 13.3,
+        "z": 0.6,
+        "yaw": -179.8
+      },
+      "uav_spawn": {
+        "x": 54.5,
+        "y": 19.1,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 46.4,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_013",
+      "map": "Town10HD",
+      "instruction": "A row of tall, evenly spaced evergreen trees lines the center of the street, forming a distinctive green corridor. The truck is positioned near the middle of the road, directly beneath this tree-lined avenue. On either side of the street are multi-story buildings with uniform blue-gray facades and regularly spaced windows, creating a symmetrical urban backdrop. The sidewalk features a checkered pattern of light and dark tiles, adding texture to the pavement. A few pedestrians and small vehicles are visible, but they are sparse and not prominent. Streetlights and traffic signs are present at regular intervals along the road. At the far end of the street, a grand building with classical architecture and columns stands out as a notable landmark.",
+      "goal": {
+        "x": -20.1,
+        "y": 16.7,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 1,
+        "x": -67.3,
+        "y": 28.0,
+        "z": 0.6,
+        "yaw": 0.2
+      },
+      "uav_spawn": {
+        "x": -43.7,
+        "y": 22.4,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 48.5,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_014",
+      "map": "Town10HD",
+      "instruction": "A large, ornate classical-style building with columns and a central staircase dominates the background. A prominent billboard featuring a woman's face is mounted on the side of a modern multi-story building to the right. Two distinct blue-green trees are positioned near the intersection, one directly adjacent to the truck and another across the street. The truck is purple and located at a curved road segment near a crosswalk. A small white vehicle is parked on the sidewalk nearby. The surrounding area includes paved roads, pedestrian crossings, and a mix of urban architecture with visible windows and balconies.",
+      "goal": {
+        "x": 77.0,
+        "y": 24.8,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 108,
+        "x": 99.4,
+        "y": -19.7,
+        "z": 0.6,
+        "yaw": 90.8
+      },
+      "uav_spawn": {
+        "x": 88.2,
+        "y": 2.6,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 49.8,
+      "time_budget_s": 180,
+      "tags": []
+    },
+    {
+      "id": "town10hd_015",
+      "map": "Town10HD",
+      "instruction": "A large, colorful beach umbrella with a striped pattern is positioned on the sidewalk near the left side of the road. A tall palm tree stands prominently on the right sidewalk, casting a shadow. The road is flanked by high-rise buildings with distinct architectural styles: one has a gray facade with vertical lines, another features a yellowish-brown exterior with horizontal bands, and a third has a blue-gray surface with rectangular windows. A fountain with multiple water jets is located at the far end of the street, surrounded by greenery. Several smaller palm trees are spaced along the sidewalks. A purple vehicle is parked on the left side of the road near the foreground. The pavement has a checkered pattern of light and dark tiles. A few pedestrians are visible near the sidewalk, and a small trash can is placed near the curb.",
+      "goal": {
+        "x": 22.9,
+        "y": -60.9,
+        "z": 0.6
+      },
+      "ugv_spawn": {
+        "index": 71,
+        "x": -24.3,
+        "y": -57.8,
+        "z": 0.6,
+        "yaw": 0.6
+      },
+      "uav_spawn": {
+        "x": -0.7,
+        "y": -59.3,
+        "z": 50.0,
+        "yaw": 0.0
+      },
+      "distance_m": 47.3,
+      "time_budget_s": 180,
+      "tags": []
+    }
+  ],
+  "spawn_points": []
+}
