@@ -52,7 +52,7 @@ No training, no learned cross-agent representation — just a frozen VLM
   SPF, turning fixed-altitude planar point-fly into three-dimensional spatial
   search (UAV success 20.0% → 60.0%, a 3× gain).
 - 🗺️ **Shared bird's-eye map** — the UAV's global view fills the UGV's
-  first-person blind spot, lifting the UGV from 13.0% → 75.0%.
+  first-person blind spot, lifting the UGV from 12.0% → 75.0%.
 - 🤝 **Positive collaboration gain** — joint success **77.0%**, a **+27.0%**
   gain over the weaker single agent, and **24.0 pts** above the best published
   single-agent baseline (Travel UAV, 53.0%).
@@ -112,14 +112,14 @@ individual agent — and exceeds the strongest published single-agent baseline
 
 | Method | SR_UGV ↑ | SR_UAV ↑ | SR_joint ↑ | SPL ↑ | NE (m) ↓ | CG ↑ | Time (s) ↓ | VLM calls ↓ | Path_UAV (m) ↓ | Path_UGV (m) ↓ |
 |---|---|---|---|---|---|---|---|---|---|---|
-| OpenFly | — | 0.0% | 0.0% | 0.0% | 78.4±18.7 | 0.0% | 181.8±1.5 | 34.1±7.3 | 56.4±16.0 | — |
-| FineCog-Nav | — | 13.0% | 13.0% | 13.0% | 28.4±12.9 | 0.0% | 177.2±35.4 | 58.0±12.4 | 19.9±10.4 | — |
-| 3DG-VLN | — | 33.0% | 33.0% | 33.0% | 49.6±32.1 | 0.0% | 142.1±60.4 | 11.7±5.2 | 49.2±21.7 | — |
-| Travel UAV | — | 53.0% | 53.0% | 53.0% | 30.3±24.3 | 0.0% | 115.8±63.4 | 21.0±11.5 | 42.24±27.70 | — |
-| UGV-only VLM | 13.0% | — | 13.0% | 13.0% | 113.4±63.4 | 0.0% | 157.9±58.2 | 9.5±3.5 | — | 106.4±60.3 |
-| UAV-only SPF | — | 20.0% | 20.0% | 18.0% | 155.5±94.9 | 0.0% | 161.6±51.8 | 12.9±6.5 | 119.1±74.1 | — |
-| UAV-only 3D-SPF | — | 60.0% | 60.0% | 46.0% | 30.0±40.9 | 0.0% | 134.4±39.0 | 13.0±7.1 | 84.3±36.7 | — |
-| **AGC-VLN (ours)** | **75.0%** | **50.0%** | **77.0%** | **62.0%** | **10.9±16.2** | **+27.0%** | **162.0±21.4** | **12.1±2.9** | **65.1±22.2** | **43.5±14.0** |
+| OpenFly | — | 0.0% | 0.0% | 0.0% | 78.4±18.7 | 0.0% | --- | 34.1±7.3 | 56.4±16.0 | — |
+| FineCog-Nav | — | 13.0% | 13.0% | 10.0% | 28.4±12.9 | 0.0% | 177.2±35.4 | 58.0±12.4 | 19.9±10.4 | — |
+| 3DG-VLN | — | 33.0% | 33.0% | 26.0% | 49.6±32.1 | 0.0% | 142.1±60.4 | 11.7±5.2 | 49.2±21.7 | — |
+| Travel UAV | — | 53.0% | 53.0% | 45.0% | 30.3±24.3 | 0.0% | 115.8±63.4 | 21.0±11.5 | 42.24±27.70 | — |
+| UGV-only VLM | 12.0% | — | 12.0% | 11.6% | 115.2±65.6 | 0.0% | 28.2±3.0 | 12.1±4.0 | — | 49.4±4.0 |
+| UAV-only SPF | — | 20.0% | 20.0% | 18.0% | 155.5±94.9 | 0.0% | 58.5±9.6 | 12.9±6.5 | 119.1±74.1 | — |
+| UAV-only 3D-SPF | — | 60.0% | 60.0% | 46.0% | 30.0±40.9 | 0.0% | 104.0±8.0 | 13.0±7.1 | 84.3±36.7 | — |
+| **AGC-VLN (ours)** | **75.0%** | **50.0%** | **77.0%** | **62.0%** | **10.9±16.2** | **+27.0%** | **82.2±27.0** | **12.1±2.9** | **65.1±22.2** | **43.5±14.0** |
 
 SR_UGV / SR_UAV / SR_joint = UGV / UAV / joint success rate (goal within 5 m).
 SPL = success weighted by path length; NE = navigation error; CG = collaboration
