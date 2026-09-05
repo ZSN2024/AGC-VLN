@@ -18,6 +18,16 @@
 
 </div>
 
+## 🎥 Demo Video
+
+<p align="center">
+  <a href="assets/AGC-VLN.mp4">
+    <img src="assets/video_poster.png" alt="AGC-VLN demo video" width="95%">
+  </a>
+  <br>
+  <em>▶ <a href="assets/AGC-VLN.mp4">Watch the demo video</a> (2 min, MP4)</em>
+</p>
+
 <p align="center">
   <img src="assets/teaser.png" alt="AGC-VLN teaser" width="95%">
 </p>
