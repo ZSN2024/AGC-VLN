@@ -75,7 +75,7 @@ def main():
     sr_uav = 100.0 * n_uav / n
     sr_ugv = 100.0 * n_ugv / n
     sr_joint = 100.0 * n_joint / n
-    cg = sr_joint - max(sr_uav, sr_ugv)
+    cg = sr_joint - min(sr_uav, sr_ugv)
 
     succ_times = [r["succ_time_s"] for r in rows if r["joint"] and r["succ_time_s"] is not None]
     all_times = [r["time_s"] for r in rows if r["time_s"] is not None]

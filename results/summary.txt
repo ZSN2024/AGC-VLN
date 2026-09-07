@@ -1,0 +1,61 @@
+============================================
+  Table-4 Summary (batch_20260828_192843)
+  Runs: 100
+  SR_UAV:   50.0%  (50/100)
+  SR_UGV:   75.0%  (75/100)
+  SR_joint: 77.0%  (77/100)  [union]
+  CG:       27.0%
+  Time (joint succ): 157.0±21.5 s
+  Time (all):        162.3±21.3 s
+--------------------------------------------
+  town10hd_001: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_002: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_003: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_004: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_005: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_006: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_007: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_008: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_009: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_010: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_011: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_012: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_013: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_014: 2 runs  UAV 1/2  UGV 1/2  joint 1/2
+  town10hd_015: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_016: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_017: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_018: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_019: 2 runs  UAV 0/2  UGV 1/2  joint 1/2
+  town10hd_020: 2 runs  UAV 1/2  UGV 1/2  joint 2/2
+  town10hd_021: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_022: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_023: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_024: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_025: 2 runs  UAV 1/2  UGV 1/2  joint 2/2
+  town10hd_026: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_027: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_028: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_029: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_030: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_031: 2 runs  UAV 0/2  UGV 1/2  joint 1/2
+  town10hd_032: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_033: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_034: 2 runs  UAV 0/2  UGV 1/2  joint 1/2
+  town10hd_035: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_036: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_037: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_038: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_039: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_040: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_041: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_042: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_043: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_044: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+  town10hd_045: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_046: 2 runs  UAV 0/2  UGV 0/2  joint 0/2
+  town10hd_047: 2 runs  UAV 1/2  UGV 2/2  joint 2/2
+  town10hd_048: 2 runs  UAV 0/2  UGV 2/2  joint 2/2
+  town10hd_049: 2 runs  UAV 0/2  UGV 1/2  joint 1/2
+  town10hd_050: 2 runs  UAV 2/2  UGV 2/2  joint 2/2
+============================================

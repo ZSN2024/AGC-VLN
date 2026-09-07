@@ -45,8 +45,9 @@ VLN. The key insight is that training-free methods decompose navigation into
 VLM-based *semantic reasoning* and deterministic *geometric execution*,
 exposing a natural collaboration interface: a **shared bird's-eye map**.
 
-- The **UAV** renders the UGV's reported pose and the VLM-anchored target as
-  `CAR` / `GOAL` markers with distance labels onto its global bird's-eye view.
+- The **UAV** renders the UGV's reported pose and the target's ground-truth
+  position as `CAR` / `GOAL` markers with distance labels onto its global
+  bird's-eye view.
 - The **UGV** reads this map, plans a road-following path with a frozen VLM,
   and executes it under closed-loop control.
 - In parallel, the UAV runs **3D-SPF**, a spatial-search upgrade of
@@ -81,15 +82,14 @@ No training, no learned cross-agent representation — just a frozen VLM
 
 The UAV faces a downward RGB camera and, at each decision step (≈3 s, ~0.33 Hz):
 
-1. **Anchors** the target in the downward image with a frozen VLM against the
-   target photo `P_g`.
-2. **Renders** a shared bird's-eye map: a blue `CAR` marker (the UGV pose), a
-   red `GOAL` marker (the target), a green cross (the UAV itself), a yellow
-   `CAR→GOAL` reference line, and distance labels.
-3. **Runs 3D-SPF** for itself: the VLM returns the target's pixel position and
-   a discrete height command `h ∈ {descend, hold, ascend}`. The pixel is
-   projected to world coordinates via flat-ground ray casting, the UAV flies
-   toward it with proportional velocity, then adjusts altitude accordingly.
+1. **Renders** a shared bird's-eye map: a blue `CAR` marker (the UGV pose), a
+   red `GOAL` marker (the target's ground-truth position), a green cross (the
+   UAV itself), a yellow `CAR→GOAL` reference line, and distance labels.
+2. **Runs 3D-SPF** for itself: a frozen VLM localizes the target in the
+   downward image against the target photo `P_g`, returning the target's pixel
+   position and a discrete height command `h ∈ {descend, hold, ascend}`. The
+   pixel is projected to world coordinates via flat-ground ray casting, the UAV
+   flies toward it with proportional velocity, then adjusts altitude accordingly.
 
 ### UGV — map path planning & closed-loop execution
 
@@ -211,7 +211,13 @@ The UAV and UGV run as two parallel threads communicating through shared
 memory. Each decision step (≈3 s) the UAV annotates the bird's-eye map and runs
 3D-SPF, while the UGV plans a 10-waypoint road path and follows it with a
 closed-loop controller. Success means either agent reaches the target within
-10 m inside the time budget.
+5 m inside the time budget.
+
+## Reproduction
+
+For the full reproduction guide — dataset, `generate_episodes.py`, the
+100-episode results, and a frank list of known differences between the paper and
+the released code — see **[REPRODUCE.md](REPRODUCE.md)**.
 
 ## Citation
 

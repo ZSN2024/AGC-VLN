@@ -27,7 +27,7 @@ from openai import OpenAI
 
 DRONE_ALTITUDE = 60.0
 DOWNWARD_FOV = 108.0
-SUCCESS_DIST = 10.0
+SUCCESS_DIST = 5.0
 DECISION_INTERVAL = 3.0
 
 # Map-annotation richness levels (Table 4 ablation): which markers are drawn
