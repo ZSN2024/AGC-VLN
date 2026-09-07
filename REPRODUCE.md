@@ -96,19 +96,21 @@ aggregate metrics are:
 The aggregate `results.csv` and `summary.txt` are kept in
 [`results/`](results/).
 
-## 7. Known differences from the paper (honest disclosure)
+## 7. Notes on the released code (code-paper alignment)
 
-The released code differs from the paper in the following ways, kept as-is for
-transparency:
+For transparency, here is how the released code relates to the paper's
+description:
 
-1. **Target anchoring**: the red `GOAL` marker on the shared bird's-eye map is
-   drawn from the episode's **ground-truth goal coordinate** (not VLM
-   localization). The VLM (`vlm_uav`) is used only for the UAV's own flight
-   (3D-SPF).
+1. **Target anchoring**: the paper's method section describes the target as
+   "anchored by a frozen VLM"; in the released code the red `GOAL` marker on
+   the shared bird's-eye map is drawn from the episode's **ground-truth goal
+   coordinate**, while the VLM (`vlm_uav`) localizes the target only for the
+   UAV's own flight (3D-SPF).
 2. **Instruction**: the 50 templates' `instruction` field is a `[TODO: ...]`
    placeholder (only the 15 annotated episodes have real English instructions),
    and `vlm_ugv`'s prompt does **not** inject the instruction text.
 3. **Goal photos**: `photos/` has 15 goal photos, but the episode JSON has no
    `goal_photo` field pointing to them, so `ep.get("goal_photo")` returns
    `None` and the photos are not wired into the main flow.
-4. **Success threshold**: `SUCCESS_DIST = 5.0` (an earlier commit used 10.0).
+4. **Success threshold**: `SUCCESS_DIST = 5.0` m, matching the paper's 5 m
+   threshold (an earlier commit used 10.0).
