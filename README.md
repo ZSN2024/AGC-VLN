@@ -12,7 +12,8 @@
 
 **Training-free air-ground collaboration — the UAV turns its "can see" into the UGV's "can drive".**
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.03483-b31b1b.svg)](https://arxiv.org/abs/2609.03483)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Town10HD%20100episodes-orange)](https://huggingface.co/datasets/Shuning1997/AGC-VLN-Town10HD-100episodes)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/)
 
@@ -184,6 +185,13 @@ AGC-VLN/
 > AirSim into a single Unreal Engine process. Set it up first following its own
 > instructions, then continue with the steps below.
 
+> **⚠️ Camera must be top-down.** The UAV's downward camera (AirSim camera `"1"`,
+> read by `capture_downward`) **must point straight down (nadir / 正俯视)**,
+> because the code's flat-ground projection (`world_to_pix` / `pix_to_world`)
+> assumes a vertical downward view. In `AirSimConfig/settings.json`, the camera
+> `Pitch` must be **`-90`**. A tilted camera (e.g. the default `45°`) breaks the
+> projection and the results will not reproduce.
+
 ```bash
 # 1. Python dependencies
 pip install -r requirements.txt
@@ -212,6 +220,23 @@ memory. Each decision step (≈3 s) the UAV annotates the bird's-eye map and run
 3D-SPF, while the UGV plans a 10-waypoint road path and follows it with a
 closed-loop controller. Success means either agent reaches the target within
 5 m inside the time budget.
+
+## Dataset
+
+The 100 closed-loop evaluation runs (Town10HD) are hosted on Hugging Face:
+
+- 🤗 **Dataset**: https://huggingface.co/datasets/Shuning1997/AGC-VLN-Town10HD-100episodes
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("Shuning1997/AGC-VLN-Town10HD-100episodes")
+print(ds["train"].to_pandas())
+```
+
+`results.parquet` is one row per run (100 rows) with the success flags, times,
+path lengths, final distances, and VLM-call counts; the raw per-run `result.json`
+and per-step images are in the `collab_*` directories.
 
 ## Reproduction
 
