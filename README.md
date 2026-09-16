@@ -168,7 +168,7 @@ AGC-VLN/
 ├── collab_UAV_UGV/        # main pipeline: UAV 3D-SPF + UGV VLM path planning
 ├── collab_UAV_UGV_alt/    # UAV initial-altitude ablation (30/60/90/120 m)
 ├── collab_UAV_UGV_annot/  # map-annotation-richness ablation
-├── episodes/              # Town10HD episodes (50 spawn points) + goal photos
+├── episodes/              # 15 annotated Town10HD episodes + goal photos
 ├── assets/                # figures used in this README
 ├── config.json.example    # VLM configuration template (copy to config.json)
 ├── requirements.txt       # Python dependencies
@@ -237,6 +237,10 @@ print(ds["train"].to_pandas())
 `results.parquet` is one row per run (100 rows) with the success flags, times,
 path lengths, final distances, and VLM-call counts; the raw per-run `result.json`
 and per-step images are in the `collab_*` directories.
+
+> **Note**: this Hugging Face dataset holds the *evaluation runs only* — it does
+> not contain the episode `instruction`s or `goal_photo`s. Those live in this
+> repository under `episodes/` (15 annotated scenes, 001–015).
 
 ## Reproduction
 

@@ -325,8 +325,8 @@ def do_height(air, height_cmd, goal_ned_z):
 # VLM calls
 # ═══════════════════════════════════════════════════════════════════
 
-def vlm_uav(client, cfg, img, goal_img_path):
-    """UAV modified SPF: locate the orange truck in downward view."""
+def vlm_uav(client, cfg, img, goal_img_path, instruction=""):
+    """UAV modified SPF: locate the target truck described by the instruction."""
     _, buf = cv2.imencode(".jpg", img, [cv2.IMWRITE_JPEG_QUALITY, 85])
     current_b64 = base64.b64encode(buf.tobytes()).decode("ascii")
     goal_b64 = None
@@ -337,8 +337,13 @@ def vlm_uav(client, cfg, img, goal_img_path):
             _, buf2 = cv2.imencode(".jpg", goal_img, [cv2.IMWRITE_JPEG_QUALITY, 85])
             goal_b64 = base64.b64encode(buf2.tobytes()).decode("ascii")
 
+    instr = (instruction or "").strip()
+    if instr and not instr.startswith("[TODO"):
+        task = f"Instruction: {instr}\n\nLocate the truck described above in the downward view."
+    else:
+        task = "Find the target truck."
     prompt = (
-        "Find the orange truck. Return ONLY valid JSON (no markdown, no explanation).\n"
+        f"{task} Return ONLY valid JSON (no markdown, no explanation).\n"
         "Format: {\"point\": [x, y], \"height\": -1/0/1}\n"
         "x,y: pixel coordinates (0-1280, 0-960). height:-1=descend, 0=hold, 1=ascend.\n"
         "Always use height=-1 when truck is visible."
@@ -567,7 +572,7 @@ def uav_loop(state: SharedState, air, client, cfg, ep, offset, log_dir, log_f, a
         carla.Location(x=goal["x"], y=goal["y"], z=goal["z"]), offset
     ))
     goal_photo = (
-        Path(__file__).resolve().parent.parent / ep.get("goal_photo", "")
+        _project_root() / ep.get("goal_photo")
         if ep.get("goal_photo") else None
     )
 
@@ -689,7 +694,7 @@ def uav_loop(state: SharedState, air, client, cfg, ep, offset, log_dir, log_f, a
                         if auto_mode:
                             cv2.imwrite(str(log_dir / f"step{dc:03d}_input.jpg"),
                                         img, [cv2.IMWRITE_JPEG_QUALITY, 85])
-                        result = vlm_uav(client, cfg, img, goal_photo)
+                        result = vlm_uav(client, cfg, img, goal_photo, ep.get("instruction", ""))
                         if auto_mode:
                             (log_dir / f"step{dc:03d}_uav_vlm.json").write_text(
                                 json.dumps(result, indent=2), encoding="utf-8")
@@ -745,7 +750,7 @@ def ugv_loop(state: SharedState, start_car, world, client, cfg, ep,
     """
     goal = ep["goal"]
     goal_photo = (
-        Path(__file__).resolve().parent.parent / ep.get("goal_photo", "")
+        _project_root() / ep.get("goal_photo")
         if ep.get("goal_photo") else None
     )
     goal_carla = np.array([goal["x"], goal["y"], goal["z"]])

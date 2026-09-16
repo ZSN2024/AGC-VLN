@@ -29,26 +29,28 @@ export SPF_CCODE_API_KEY=<your ccode key>
 
 | File | Content |
 |---|---|
-| `town10hd_templates.json` | 50 episode templates (start/goal spawn points, distance) |
-| `town10hd_annotated.json` | 15 annotated episodes (with full English instructions) |
+| `town10hd_annotated.json` | 15 annotated episodes (full English instructions + goal photos) |
+| `town10hd_templates.json` | 15 raw episode templates (start/goal spawn points, distance) |
 | `photos/town10hd_001_goal.jpg` … `015_goal.jpg` | 15 goal photos |
 
 Each episode has fields: `id`, `map`, `instruction`, `goal{x,y,z}`,
 `ugv_spawn{index,x,y,z,yaw}`, `uav_spawn{x,y,z,yaw}`, `distance_m`,
 `time_budget_s` (180), `tags`.
 
-> **About "100 episodes"**: the paper's 100 closed-loop episodes are the
-> 50 scenes above, each run **twice** (100 runs total).
+> **About "100 episodes"**: the paper's 100 closed-loop episodes are 50 scenes,
+> each run **twice** (100 runs total). This repository releases the 15
+> fully-annotated scenes (001–015); the complete 100-run results are on Hugging
+> Face (see §6).
 
 ## 3. Episode generation
 
 `collab_UAV_UGV/scripts/generate_episodes.py` generates the templates. It
 requires CARLA-Air to be running (it reads `get_spawn_points()` live). The
-50 templates were generated with:
+15 templates were generated with:
 
 ```bash
 python collab_UAV_UGV/scripts/generate_episodes.py \
-    --map Town10HD --num 50 --min-dist 40 --max-dist 60 \
+    --map Town10HD --num 15 --min-dist 40 --max-dist 60 \
     --uav-altitude 50 --seed 42
 ```
 
@@ -106,11 +108,11 @@ description:
    the shared bird's-eye map is drawn from the episode's **ground-truth goal
    coordinate**, while the VLM (`vlm_uav`) localizes the target only for the
    UAV's own flight (3D-SPF).
-2. **Instruction**: the 50 templates' `instruction` field is a `[TODO: ...]`
-   placeholder (only the 15 annotated episodes have real English instructions),
-   and `vlm_ugv`'s prompt does **not** inject the instruction text.
-3. **Goal photos**: `photos/` has 15 goal photos, but the episode JSON has no
-   `goal_photo` field pointing to them, so `ep.get("goal_photo")` returns
-   `None` and the photos are not wired into the main flow.
+2. **Instruction**: the 15 released episodes have real English instructions and
+   the UAV's `vlm_uav` prompt injects `ep["instruction"]`. The UGV's `vlm_ugv`
+   prompt does **not** inject the instruction text — it plans from the
+   annotated map's `CAR`/`GOAL` markers instead.
+3. **Goal photos**: `photos/` has 15 goal photos, wired to the episodes via a
+   `goal_photo` field in `town10hd_annotated.json`.
 4. **Success threshold**: `SUCCESS_DIST = 5.0` m, matching the paper's 5 m
    threshold (an earlier commit used 10.0).
